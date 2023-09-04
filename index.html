@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution-interactive-rating</title>
+    <link rel="shortcut icon" href="assets/icon-star.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">   
+    <img src="assets/icon-star.svg" alt="">
+    <h1 class="card-title">How did We do?</h1>
+    <p class="card-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <br>
+    <button class="rate" onclick="rateButton(this)">1</button>
+    <button class="rate" onclick="rateButton(this)">2</button>
+    <button class="rate" onclick="rateButton(this)">3</button>
+    <button class="rate" onclick="rateButton(this)">4</button>
+    <button class="rate" onclick="rateButton(this)">5</button>
+    <br><br>
+  <a href="thank-you.html" class="btn"><button type="button" href="thank-you.html">Submit</button></a>
+</div>
+
+<script>
+    function rateButton(button) {
+        var buttons = document.getElementsByClassName("rate");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.backgroundColor = "rgb(61, 65, 65)";
+            buttons[i].style.color = "#fff";
+        }
+        button.style.backgroundColor = "rgb(30,21,40)";
+        button.style.color = "#fff";
+    }
+
+</script>
+
+</body>
+</html>

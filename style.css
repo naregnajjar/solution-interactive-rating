@@ -1,0 +1,52 @@
+body {
+    background-color:rgb(37, 39, 37);
+    box-sizing: border-box;
+ position: relative;
+  height: 100vh; 
+  
+}
+
+.card {
+
+    background-color: rgb(87, 92, 92);
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.card .rate {
+
+    box-sizing: inherit;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(61, 65, 65);
+    border-radius: 1em;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.2ms   ease-in;
+}
+
+
+.card a:hover {
+    background-color: rgb(122, 121, 119);
+}
+
+
+button{
+    border-radius: 1em;
+    background-color: rgb(253, 153, 4);
+    width: 100%;
+    color: #fff;
+}
+
+
